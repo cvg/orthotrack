@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# IDE / agent
+.vscode/
+.idea/
+.claude/
+.cursor/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Checkpoints and model weights (local symlinks OK; never ship)
+/checkpoints
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+
+# Data (local symlinks / caches OK; never ship)
+/data
+data/
+
+# Root run outputs + test artifacts (never ship)
+/outputs/
+test/outputs/
+results/
+results_tracking/
+tmp/
+tmp_*/
+wandb/
+*.log
+logs/
+*.out
+*.err
+
+# Paper / lab-only (do not publish)
+paper/
+slurm/
+internal/
+debug_scripts/
+CLAUDE.md
+
+# Temporary root-level test scripts
+/test_*.py
+
+# Hugging Face Space (HF-only; never ship in this GitHub repo)
+spaces/
+
+# Demo scene dumps (airport10 ~250MB: DOP JPGs, DSM, frames, videos, run outputs).
+# README only needs assets/orthotrack_wordmark_transparent.gif.
+assets/demo/
+
+# Legacy demo tree (if recreated locally)
+/demo/
+
+# Third-party clones (setup.sh). Keep CityGML2OBJv2 as submodule gitlink only.
+thirdparty/*
+!thirdparty/CityGML2OBJv2

@@ -1,0 +1,3 @@
+[submodule "thirdparty/CityGML2OBJv2"]
+	path = thirdparty/CityGML2OBJv2
+	url = https://github.com/tum-gis/CityGML2OBJv2.git
